@@ -25,7 +25,7 @@ a:hover {
 
 body {
   margin: 0;
-  background-image: url("images/Fondo.svg");
+  background-image: url("Images/Fondo.svg");
 
   place-items: center;
   min-width: 320px;
