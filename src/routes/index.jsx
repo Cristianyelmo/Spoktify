@@ -9,8 +9,7 @@ export const AppRoutes = ()=>{
             <Routes>
 
 <Route path="/Spoktify/" element={<Home/>}/>
-<Route path="Spoktify/" element={<Home/>}/>
-<Route path="/Spoktify" element={<Home/>}/>
+
 
 
             </Routes>

@@ -9,7 +9,7 @@ export const MainLayout = ({children})=>{
     return(
         <div className={styles.main}>
             <Header/>
-        <Link to="/home">hola xd</Link>
+       
             <Container className='mt-5'>
                 {children}
             </Container>
