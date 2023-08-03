@@ -8,7 +8,7 @@ export const AppRoutes = ()=>{
       
             <Routes>
 
-<Route path="/Home" element={<Home/>}/>
+<Route path="home" element={<Home/>}/>
 
 
             </Routes>
