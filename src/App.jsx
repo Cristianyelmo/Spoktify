@@ -11,15 +11,17 @@ function App() {
 
 
   return (
-    <FavoriteProvider>
+    <BrowserRouter>
+  
     <MusicProvider>
-<BrowserRouter>
+    <FavoriteProvider>
     <MainLayout>
        <AppRoutes/>
     </MainLayout>
-    </BrowserRouter>
-    </MusicProvider>
     </FavoriteProvider>
+    </MusicProvider>
+  
+    </BrowserRouter>
     
     
    
