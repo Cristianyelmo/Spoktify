@@ -8,7 +8,7 @@ export const AppRoutes = ()=>{
       
             <Routes>
 
-<Route path="Spoktify/home" element={<Home/>}/>
+<Route path="/Spoktify" element={<Home/>}/>
 
 
             </Routes>
