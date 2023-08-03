@@ -1,0 +1,27 @@
+.formxd{
+    background-color: black;
+}
+
+.buttonSubmit{
+    background-color: rgba(24, 125, 61, 1);
+    width: 100%;
+    border: none;
+}
+
+
+.formEdition{
+    background-color: rgba(23, 23, 23, 1);
+    padding: 30px;
+    border-radius: 13px;
+
+}
+
+.errorMessageForm{
+    color: red;
+}
+
+.formImput{
+    background-color: black;
+    border: 2px solid #0AFFC4;
+    border-radius: 24px;
+}

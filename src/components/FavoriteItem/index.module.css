@@ -1,0 +1,31 @@
+.buttonView{
+    border-radius: 5px;
+border: 1px solid #00FA46;
+background: #000;
+font-size: 11px;
+margin-right: 40px;
+    width: 120px;
+}
+
+.photoFav{
+    padding: 5px;
+}
+
+.NameSong{
+    color:rgba(157, 157, 157, 1);
+    font-size: 19px;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el contenido que no cabe en el contenedor */
+    text-overflow: ellipsis; 
+}
+
+.BackgroundFav{
+    background-color: #262626;
+    border-radius: 9px;
+}
+
+.backgroundCard{
+    background-color: #141414;
+    border: solid 2px green;
+    margin: 9px 0px 0px 0px;
+}

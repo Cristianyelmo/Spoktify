@@ -1,0 +1,99 @@
+.backgroundModal{
+    background-color: #262626;
+    border-radius: 9px;
+   
+}
+
+.EffectAnimation{
+    animation-duration: 0.6s;
+    animation-name: slidein;
+   
+ 
+}
+
+
+@keyframes slidein {
+    from {
+     opacity: 0;
+     position: relative;
+     top: 20px;
+    }
+  
+    to {
+        opacity: 1;
+        position: relative;
+        top: 0px;
+    }
+  }
+
+
+
+
+
+.NameSong{
+    color:rgba(157, 157, 157, 1);
+    font-size: 25px;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el contenido que no cabe en el contenedor */
+    text-overflow: ellipsis; 
+}
+
+.FlexModal{
+
+    padding: 10px;
+    margin-top: 50px
+}
+
+.ImgModal{
+    padding: 15px;
+}
+
+.audioModal{
+   
+      
+        background-color: #27a800;
+        border: 1px solid #000000;
+        border-radius: 24px;
+        padding: 2px;
+      
+}
+
+.FlexModalName{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.progress::-webkit-progress-value {
+    background-color: rgb(0, 233, 0);
+  /* Para navegadores basados en WebKit (Chrome, Safari, etc.) */
+  }
+
+
+.progress{
+    vertical-align: baseline;
+   
+    border: solid #000000;
+
+    background-color: black;
+    margin-top: 5px;
+    margin-left: 8px
+}
+
+.PopularityName{
+    color:rgba(157, 157, 157, 1);
+}
+
+.videoEdit{
+    height: 110px;
+    margin-left: 25px;
+}
+
+
+
+@media (max-width:390px){
+    .ResponsiveImg{
+        display: none;
+    }
+    
+  }
