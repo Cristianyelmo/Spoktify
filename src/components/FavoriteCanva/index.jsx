@@ -36,7 +36,7 @@ const cleanCart = ()=>{
         <Offcanvas className={styles.BackgroundFav} show={showCart} onHide={handleCloseCart} placement="end">
         <Offcanvas.Header closeButton>
           <Offcanvas.Title className={styles.NameSong}>Mis Favoritos</Offcanvas.Title>
-      { favorite.length &&   <Button  onClick={cleanCart}  variant="secondary">Vaciar Favorito</Button>}
+    {/*   { favorite.length &&   <Button  onClick={cleanCart}  variant="secondary">Vaciar Favorito</Button>} */}
         </Offcanvas.Header>
         <Offcanvas.Body>
          
