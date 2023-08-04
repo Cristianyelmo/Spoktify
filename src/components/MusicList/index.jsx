@@ -58,7 +58,7 @@ return (
 <div>
  
  <img src={logo} className={styles.imagesLogo}></img>
- <p className='text-white'>Busca tus artistas favoritos en Spoktify!</p>
+ <p className='text-white'>Busca el track de tu artista preferido en Spoktify!</p>
  </div>
 </div>
 
