@@ -34,15 +34,27 @@ export const FavoriteItem = (showData) =>{
    } */
 
    const SaveTrack = showData
-const{handleDrinkIdClickFavorite}=useFavorite()
+const{handleDrinkIdClickFavorite,handleRemoveFavorite2}=useFavorite()
 const{dispatch}=useFavorite()
 
-const handleRemoveFavorite = ()=>{
+/* const handleRemoveFavorite = ()=>{
   
     dispatch({
        type: types.removeItemFavorite,
        payload:showData.music 
-   })}
+   })} */
+
+
+   const handleRemoveFavorite = ()=>{
+    
+    handleRemoveFavorite2(showData.music.id,types.removeItemFavorite,showData.music)
+
+   
+}
+
+
+
+
 
     return(
         <ListGroup.Item className={`d-flex gap-2 ${styles.backgroundCard}`}>

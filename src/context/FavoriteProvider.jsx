@@ -20,6 +20,21 @@ const[favorite,dispatch]= useReducer(FavoriteReducer,[],init)
 
 
 
+const[FavoriteRemove,setFavoriteRemove]= useState([])
+   
+
+const handleRemoveFavorite2 = (id,types,info)=>{
+    setFavoriteRemove(id)
+    dispatch({
+       type: types,
+       payload:info
+    
+   })
+
+
+   
+}
+
 
 
 
@@ -82,6 +97,8 @@ handleShowModalClickFav,
 handlePlay,
 handlePause,
 videoRef ,
+handleRemoveFavorite2,
+FavoriteRemove
 
 
 

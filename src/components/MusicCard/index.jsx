@@ -25,23 +25,40 @@ export const MusicCard = (showData) =>{
  const [toggle, setToggle] = useState(false)
  const [Try, SetTry] = useState(false)
  
- let {dispatch,favorite} =useFavorite() 
+ let {dispatch,favorite,FavoriteRemove} =useFavorite() 
 
 /*  for (var i = 0; i < favorite.length; i++) {
    console.log(i)
   }
  */
 console.log()
+
+const FavoriteMusic = favorite  && favorite.find( 
+    (favorites) => favorites.id === showData.music.id
+  )
   
 
-useEffect(()=>{
+useEffect(() => { 
 
-favorite.map((objeto)=>{
-favorite && showData.music.id === objeto.id ? SetTry(true) : SetTry(false)
-})
+    if(FavoriteRemove === showData.music.id){
+        SetTry(false); 
+        setToggle(false)
+    }
+       if (FavoriteMusic) { 
+        SetTry(true); 
+        setToggle(true)
+       } else { 
+        SetTry(false); 
+       } 
+   
+   /*     if(props.FavoriteRemove === showData.music.id){
+       alert('que pasaa')
+       } */
+console.log('funciona use efect')
 
 
-},[])
+
+     }, [FavoriteMusic]);
    
 
 
