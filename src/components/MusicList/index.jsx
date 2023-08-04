@@ -7,7 +7,7 @@ import { MusicCard } from "../MusicCard"
 import useMusic from "../../hooks/useMusic"
 import styles from './index.module.css'
 import useFavorite from '../../hooks/useFavorite'
-
+import logoError from '../../Images/LogoError.svg'
 export const MusicList = () =>{
  const{showData,loading}=   useMusic()
 
@@ -21,7 +21,28 @@ return (
 
 
 
-       { showData && loading === false ? showData.map((music) =>(
+       {
+       
+       showData && showData.length === 0 ? 
+       <div className={styles.boxLogo}> 
+     <div>
+      
+      <img src={logoError} className={styles.imagesLogoError}></img>
+      <p className='text-white'>Dios mío, cómo es posible este suceso! No se encuentra</p>
+      </div>
+     </div>
+       
+       
+       
+       
+       
+       
+       : 
+       
+       
+       
+       
+       showData && loading === false ? showData.map((music) =>(
                <MusicCard  key={music.id} music={music}    />
                )) : loading === true ?
                <div className={styles.boxLogo}> 

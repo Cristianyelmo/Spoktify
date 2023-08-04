@@ -20,6 +20,18 @@ justify-content: center;
 }
 
 
+.imagesLogoError{
+    height: 140px;
+    margin-left: 130px;
+}
+
+@media (max-width:500px){
+    .imagesLogoError{
+        height: 140px;
+        margin-left: 85px;
+    }
+  }
+
 @keyframes slidein {
     from {
         position: relative;
