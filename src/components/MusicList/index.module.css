@@ -30,6 +30,12 @@ justify-content: center;
         height: 140px;
       margin-left: 120px;;
     }
+
+    .imagesLogo{
+ 
+    margin-left: 70px;
+   
+}
   }
 
 @keyframes slidein {
